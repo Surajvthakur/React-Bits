@@ -86,7 +86,7 @@ const ModeWrapper = memo(function ModeWrapper({
     gl.setRenderTarget(null);
 
     // Background Color
-    gl.setClearColor(0x5227ff, 1);
+    gl.setClearColor(0x12041f, 1);
   });
 
   const { scale, ior, thickness, anisotropy, chromaticAberration, ...extraMat } = modeProps;
@@ -228,11 +228,11 @@ function Images() {
 
   return (
     <group ref={group}>
-      <Image position={[-2, 0, 0]} scale={[3, height / 1.1, 1]} url="/cs1.webp" />
-      <Image position={[2, 0, 3]} scale={3} url="/cs2.webp" />
-      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/cs3.webp" />
-      <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="cs1.webp" />
-      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/cs2.webp" />
+      <Image position={[-2, 0, 0]} scale={[3, height / 1.1, 1]} url="/1000107829.jpg" />
+      <Image position={[2, 0, 3]} scale={3} url="/1000116675.jpg" />
+      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/1000116681.jpg" />
+      <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/1000107829.jpg" />
+      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/1000116675.jpg" />
     </group>
   );
 }
@@ -272,7 +272,7 @@ function Typography() {
       anchorX="center"
       anchorY="middle"
     >
-      React Bits
+      {/* Meow Meow */}
     </Text>
   );
 }
