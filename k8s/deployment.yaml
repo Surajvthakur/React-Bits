@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: react-bits-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-bits
+  template:
+    metadata:
+      labels:
+        app: react-bits
+    spec:
+      containers:
+        - name: react-bits
+          image: react-bits:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3001
+        

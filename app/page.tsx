@@ -19,7 +19,7 @@ export default function Home() {
           textAlign: 'center',
           zIndex: 10 
         }}>
-          <h1 style={{ color: 'white', fontSize: '3rem', marginBottom: '2rem' }}>Laser Effect</h1>
+          <h1 style={{ color: 'white', fontSize: '3rem', marginBottom: '2rem' }}>Laser Effect New Version</h1>
           <Link href="/fluidglass">
             <button style={{
               padding: '15px 30px',
