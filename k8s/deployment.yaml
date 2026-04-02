@@ -14,8 +14,13 @@ spec:
     spec:
       containers:
         - name: react-bits
-          image: react-bits:latest
-          imagePullPolicy: Never
+          # local configurations
+          # image: react-bits:latest
+          # imagePullPolicy: Never
+
+          # Production configurations
+          image: suraj2104/react-bits:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3001
         
